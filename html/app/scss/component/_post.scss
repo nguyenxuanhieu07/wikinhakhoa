@@ -1,0 +1,53 @@
+.post {
+    &-thumbnail {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        border-radius: 10px;
+
+        img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            object-position: 50% 50%;
+            -o-object-position: 50% 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-meta {
+        line-height: 1.3;
+
+        .post-date,
+        .post-author,
+        .post-view {
+            font-size: 12px;
+            color: #545454;
+        }
+
+        .post-date {
+            margin-right: 5px;
+            padding-right: 10px;
+            border-right: 1px solid #545454;
+        }
+    }
+
+    &-grid {
+        .post-thumbnail {
+            margin-bottom: 10px;
+        }
+    }
+
+    &-excerpt {
+        font-size: 14px;
+        color: #545454;
+    }
+
+    &-title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

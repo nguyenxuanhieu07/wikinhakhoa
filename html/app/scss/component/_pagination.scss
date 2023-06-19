@@ -1,0 +1,23 @@
+.pagination {
+    padding-top: 40px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    .page-numbers {
+        padding: .4rem .95rem;
+        margin: 5px;
+        border-radius: 5px;
+        background: #E8E8E8;
+
+        &.current {
+            background: $second_color;
+            color: $light;
+            font-weight: 700;
+        }
+
+        &:hover {
+            background: $second_color;
+            color: $light;
+        }
+    }
+}
